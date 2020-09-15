@@ -1,0 +1,113 @@
+% Resume build on 11th Nov.
+% Need any help in modification,contact the mentioned URL
+% \href{https://praveen-yadav.github.io/}{Github}
+\documentclass{resume}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+% 3 lines for changing any hyperlink to dark blue color so that printout time it wont make any color difference but on PC it will look different.
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+
+\name{PRAVEEN K. YADAV}
+\address{\emph{sudomailpraveen@gmail.com} \addressskip | \emph{+91-9705450431} | \emph{\href{https://www.linkedin.com/in/praveen-yadav-7a9b2b80/}{linkedin}}}
+
+\begin{document}
+ 
+\begin{rSection}{\header{Work Experience}{}}
+%------------------------------------------------
+\begin{rSubsection}{Senior Software Engineer, Qualcomm Inc. Hyderabad}{\emph{Jul 2017- current}}{}{} 
+\item Role: Development and commercialization of \textbf{Location Middleware }software, inside GPS modem. This layer uses various network protocols(SUPL/LPP/LPPe/WIFI/WWAN) and Location Engine(GPS) to compute and share the position fix with concurrent android clients. [Software Eng./C++/C]
+\\
+\item Feature: Redesign state-machine of location service, to satisfy less memory and power constraint of {\href{https://www.qualcomm.com/products/qualcomm-9205-lte-modem}{\textbf{IoT modem}}}
+\\
+\item Took initiative of creating a log-playback tool which helped in simulation of customer test scenarios from the logs. 
+\item Tried to \textbf{automate} various steps involved in code check-in [Python].
+\end{rSubsection} 
+%------------------------------------------------
+\end{rSection} 
+
+
+\begin{rSection}{\header{Projects}{}}
+%------------------------------------------------
+\begin{rSubsection}{\href{https://github.com/somename058/IAS_DataListener}{Internet of Things(IoT) Applications Platform as a Service}}{}{}{} 
+\item Built a generic end-to-end platform that handles the storage, processing and delivery of the IoT data from sensors to the mobile apps.
+ [NodeJS,MongoDB]
+ \end{rSubsection} 
+
+%------------------------------------------------
+\begin{rSubsection}{Search Engine for Huge Wikipedia corpus}{}{}{}
+\item Using NLP and indexing techniques, able to query 63GB wiki dump and retrieve the top 10 matching Wikipedia documents within 1 seconds. Supports field search on - title, Infobox, text, categories. [Indexing,NLP,Java]
+\end{rSubsection}
+
+
+%------------------------------------------------
+\begin{rSubsection}{\href{https://github.com/praveen-yadav/express_with_react}{Emaily - A User Feedback Web Application}}{\emph{Aug 2020 }}{}{}
+\item 
+Allow client to send customized surveys via email and record user-feedback with web-hooks and {\href{https://powerful-caverns-04805.herokuapp.com/r}{deployed on Heroku}}
+With this project, I wanted to do hands-on with payments, authentication(GoogleOAuth) and redux.
+
+Used Stripe for Payment Processing and buying credits; 
+SendGrid for sending emails and recording user responses;
+Using Redux to store application state inside browser.  [Mongo/Express/React/Node]
+\end{rSubsection}
+
+
+\iffalse
+%------------------------------------------------
+\begin{rSubsection}{Index real-time Twitter stream }{\emph{2019 }}{}{}
+\item Insert real-time tweets into Kafka-topic. Consumers take data from Kafka and put it in Elastic-Search for indexing. [Distributed system, Apache Kafka]
+\end{rSubsection}
+%------------------------------------------------
+\fi
+
+\end{rSection} 
+
+%------------------------------------------------Mini Projects are comment out------------------%
+\iffalse
+\begin{rSectionlight}{\header{Mini Projects}}
+% ------------------------------------------------
+\begin{rSubsectionmini}{HTTP Proxy Cache Server}{}{}{}
+\item Cache the HTTP Requests,Responses and Resources. Support blacklisting websites [C,Pthread,HTTP]
+\end{rSubsectionmini}
+%------------------------------------------------
+\begin{rSubsectionmini}{Shell Implementation}{}{}{}
+\item Key: Support for I/O direction,Linux Pipes,Background and foreground functionality : \&, fg [C++]
+\end{rSubsectionmini}
+%------------------------------------------------
+\end{rSectionlight}
+\fi
+%------------------------------------------------Mini Projects are comment out------------------%
+
+
+\begin{rSectionlight}{\header{Education}{}}
+\vspace{6pt}
+{\bf  M.Tech. in Computer Science} \hfill 7.67/10.00 |  {\emph{Aug. 2015 - May 2017}}\\ 
+\emph{International Institute of Information Technology, Hyderabad.} \\
+{\bf B.Tech. in Computer Science} \hfill 7.78/10.00 | {\emph{Aug. 2011 - May 2015}}\\
+\emph{Jabalpur Engineering College, Jabalpur.} \\
+{ CBSE Class XII \hfill } 87.60\% | {\emph{Apr. 2010 - Mar 2011}}
+%--{\bf SSC, Class X CBSE}  \hfill  88.80\% | {\emph{Apr. 2008 - Mar 2009}}\\
+%--Kendriya Vidyalya CMM,Jabalpur, M.P. 
+\end{rSectionlight}
+
+\begin{rSectionlight}{ \header{Skills And Interests}{}}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & C and C++ \{Proficient\}, Python, Java .\\
+%--, 
+Technologies & ReactJS, NodeJS, SQL, Git, Perforce, Bash Scripting
+\\
+\end{tabular}
+\end{rSectionlight}
+
+
+\begin{rSectionlight}{
+\header{Scholastic and Extra-Curricular Achievements}{}
+}  
+\smallskip
+{All India Rank 902 in GATE-2015 out of more than 1,55,000 students. \hfill \emph{2015}}\\
+Awarded Merit Scholarship under Education Scholarship Scheme for Army (ESSA) \hfill \emph{2012, 2013}\\
+\end{rSectionlight}
+
+
+\end{document}
